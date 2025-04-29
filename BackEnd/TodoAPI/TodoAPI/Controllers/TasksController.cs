@@ -5,8 +5,6 @@ using TodoAPI.Data;
 
 namespace TodoAPI.Controllers
 {
-    public class TasksController : ControllerBase
-    {
         [ApiController]
         [Route("api/[controller]")]
         public class TaskController : ControllerBase
