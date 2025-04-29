@@ -1,1 +1,10 @@
-<p>task-list works!</p>
+<div class="task-container">
+  <h2>Minhas Tarefas</h2>
+  <div *NgFor = "let task of tasks" class="task-item">
+    <h3>{{ task.title}}</h3>
+    <p>{{ task.descripition}}</p>
+    <button (click)="markAsCompleted(task)">
+      {{ task.isCompleted ? '✓ Concluída' : 'Marcar'}}
+    </button>
+  </div>
+</div>
